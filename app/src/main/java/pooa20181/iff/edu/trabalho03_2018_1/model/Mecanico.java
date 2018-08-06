@@ -6,18 +6,18 @@ import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
 public class Mecanico extends RealmObject implements Serializable{
-    private String nome, funca, data_nascimentoo, rua, bairro, municipio;
+    private String nome, funcao, data_nascimentoo, rua, bairro, municipio;
     private int longitude, latitude;
     @PrimaryKey
     private int id;
 
     public Mecanico(){}
 
-    public Mecanico(String nome, String funca, String data_nascimentoo,
+    public Mecanico(String nome, String funcao, String data_nascimentoo,
                     String rua, String bairro, String municipio, int longitude,
                     int latitude, int id) {
         this.nome = nome;
-        this.funca = funca;
+        this.funcao = funcao;
         this.data_nascimentoo = data_nascimentoo;
         this.rua = rua;
         this.bairro = bairro;
@@ -35,12 +35,12 @@ public class Mecanico extends RealmObject implements Serializable{
         this.nome = nome;
     }
 
-    public String getFunca() {
-        return funca;
+    public String getFuncao() {
+        return funcao;
     }
 
-    public void setFunca(String funca) {
-        this.funca = funca;
+    public void setFuncao(String funcao) {
+        this.funcao = funcao;
     }
 
     public String getData_nascimentoo() {
