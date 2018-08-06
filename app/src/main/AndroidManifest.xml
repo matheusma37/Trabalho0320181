@@ -19,7 +19,8 @@
         </activity>
         <activity android:name=".activity.OficinaActivity" />
         <activity android:name=".activity.MecanicoActivity" />
-        <activity android:name=".activity.DetalheOficina"></activity>
+        <activity android:name=".activity.DetalheOficina" />
+        <activity android:name=".activity.DetalheMecanico"></activity>
     </application>
 
 </manifest>
